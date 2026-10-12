@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official medical conference website, scientific program, faculty and registration.">
+  <title>MEDICON 2027 | Medical Conference</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#home">MEDI<span>CON</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#program">Program</a>
+      <a href="#faculty">Faculty</a>
+      <a class="nav-register" href="#register">Register Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">AN ACADEMIC GATHERING FOR MEDICAL PROFESSIONALS</p>
+        <h1>Advancing Medicine.<br><span>Inspiring Tomorrow.</span></h1>
+        <p class="hero-description">
+          Discover new research, exchange ideas and connect with
+          leading experts at our annual medical conference.
+        </p>
+
+        <div class="event-details">
+          <div>
+            <span class="detail-label">DATE</span>
+            <strong>12–14 February 2027</strong>
+          </div>
+          <div>
+            <span class="detail-label">VENUE</span>
+            <strong>Jaipur, Rajasthan, India</strong>
+          </div>
+        </div>
+
+        <a href="#register" class="button button-gold">Register for Conference ↗</a>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <p class="eyebrow">WELCOME TO MEDICON 2027</p>
+      <h2>Knowledge that moves <span>medicine forward.</span></h2>
+      <p class="section-copy">
+        Join healthcare professionals, researchers and educators
+        for scientific discussions, expert-led sessions and
+        opportunities to build meaningful connections.
+      </p>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-number">01</span>
+          <h3>Scientific Sessions</h3>
+          <p>Explore research, evidence-based practice and new developments.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">02</span>
+          <h3>Expert Faculty</h3>
+          <p>Learn from experienced clinicians, researchers and educators.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">03</span>
+          <h3>Networking</h3>
+          <p>Connect with peers and build lasting professional relationships.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section program" id="program">
+      <p class="eyebrow">SAVE YOUR SEAT</p>
+      <h2>Conference <span>program</span></h2>
+      <div class="schedule">
+        <article>
+          <div class="day">DAY 01</div>
+          <div>
+            <h3>Pre-Conference Workshops</h3>
+            <p>Hands-on learning, practical demonstrations and focused training.</p>
+          </div>
+        </article>
+        <article>
+          <div class="day">DAY 02</div>
+          <div>
+            <h3>Scientific Conference</h3>
+            <p>Keynotes, expert lectures, research presentations and discussions.</p>
+          </div>
+        </article>
+        <article>
+          <div class="day">DAY 03</div>
+          <div>
+            <h3>Innovation & Closing Sessions</h3>
+            <p>Emerging ideas, collaborative discussions and closing remarks.</p>
+          </div>
+        </article>
+      </div>
+      <p class="note">Sample program. Replace with your approved scientific schedule.</p>
+    </section>
+
+    <section class="section faculty" id="faculty">
+      <p class="eyebrow">LEARN FROM THE BEST</p>
+      <h2>Distinguished <span>faculty</span></h2>
+      <div class="faculty-grid">
+        <article class="faculty-card">
+          <div class="faculty-avatar">F1</div>
+          <h3>Faculty Member One</h3>
+          <p>Senior Consultant</p>
+        </article>
+        <article class="faculty-card">
+          <div class="faculty-avatar">F2</div>
+          <h3>Faculty Member Two</h3>
+          <p>Professor & Researcher</p>
+        </article>
+        <article class="faculty-card">
+          <div class="faculty-avatar">F3</div>
+          <h3>Faculty Member Three</h3>
+          <p>Medical Specialist</p>
+        </article>
+      </div>
+      <p class="note">Placeholder names. Add confirmed faculty profiles and photographs.</p>
+    </section>
+
+    <section class="section registration" id="register">
+      <div class="registration-intro">
+        <p class="eyebrow">BE PART OF THE EXPERIENCE</p>
+        <h2>Register for <span>MEDICON 2027</span></h2>
+        <p>Submit your interest in attending the conference.</p>
+      </div>
+
+      <form id="registrationForm">
+        <label for="fullName">Full name</label>
+        <input id="fullName" name="fullName" required
+          placeholder="Enter your full name">
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" required
+          placeholder="you@example.com">
+
+        <label for="phone">Mobile number</label>
+        <input id="phone" name="phone" type="tel" required
+          placeholder="Enter your contact number">
+
+        <label for="profession">Professional category</label>
+        <select id="profession" name="profession" required>
+          <option value="">Select your category</option>
+          <option>Doctor</option>
+          <option>Postgraduate / Resident</option>
+          <option>Researcher</option>
+          <option>Medical Student</option>
+          <option>Other Healthcare Professional</option>
+        </select>
+
+        <button type="submit" class="button button-gold full-button">
+          Submit Registration Interest
+        </button>
+        <p id="formMessage" class="form-message" role="status"></p>
+        <p class="note">Demo form only. Submissions are not stored or sent.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#home">MEDI<span>CON</span></a>
+    <p>Organized by Your Conference Organizing Team</p>
+    <p>© 2027 MEDICON. All rights reserved.</p>
+  </footer>
+</body>
+</html>
